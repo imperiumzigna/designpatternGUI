@@ -5,9 +5,8 @@
   * Class Core - Principal Class of the system. Handles program initialization and other class requisites.
  */
 
-class Core {
-	constructor(nothing){
 
-	}
+class Core {
+
 
 }

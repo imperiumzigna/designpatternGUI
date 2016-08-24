@@ -17,4 +17,5 @@ class Pattern extends Core {
 
 	}
 
+
 }
