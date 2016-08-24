@@ -1,0 +1,42 @@
+{
+  "language": "java",
+  "pattern": "Singleton",
+  "classes": {
+	"SingleObject": {
+	  "extends": false,
+	  "package": false,
+
+	  "attributes": {
+		"instance": {
+		  "access": "private",
+		  "static": true,
+		  "type": "SingleObject"
+		}
+	  },
+
+	  "methods": {
+		"SingleObject": {
+		  "access": "private",
+		  "static": false,
+		  "return": false,
+		  "args": false,
+		  "logic": false,
+		  "doc": {
+			"text": "This class cannot be instantiated"
+		  }
+		},
+
+		"getInstance": {
+		  "access": "public",
+		  "static": true,
+		  "return": "instance",
+		  "args": false,
+		  "logic": false,
+		  "doc": {
+			"text": "Get the only object available"
+		  }
+		}
+	  }
+	}
+  }
+}
