@@ -5,8 +5,14 @@
   * Class Core - Principal Class of the system. Handles program initialization and other class requisites.
  */
 
+ require('path');
 
 class Core {
+
+	initialize(path){
+		path.dirname();
+	}
+
 
 
 }
