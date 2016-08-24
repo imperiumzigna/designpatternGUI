@@ -1,0 +1,12 @@
+{
+  "name": "designPTR",
+  "version": "1.0.0",
+  "description": "A tool for generation of code design patterns",
+  "main": "main.js",
+  "keywords": [
+    "electron",
+    "designPTR"
+  ],
+  "author": "Igor Amorim Silva",
+  "license": "MIT"
+}
