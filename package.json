@@ -1,14 +1,14 @@
 {
   "name": "designpatterngui",
   "productName": "Designpatterngui",
-  "version": "0.0.0",
-  "description": "My shining app",
+  "version": "1.0.0",
+  "description": "A tool for Design Patterns",
   "license": "MIT",
   "repository": "imperiumzigna/designpatterngui",
   "author": {
     "name": "Igor Amorim Silva",
     "email": "igoramorimsilva2@gmail.com",
-    "url": "teste"
+    "url": "https://github.com/imperiumzigna/designpatternGUI"
   },
   "scripts": {
     "test": "xo",
