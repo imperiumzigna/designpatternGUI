@@ -36,6 +36,15 @@
 			"text": "Get the only object available"
 		  }
 		}
+	  },
+
+	  "docs" : {
+		"text": "Create a Singleton Class for Java",
+		"meta": {
+		  "author": "Author",
+		  "date": null,
+		  "deprecated": null
+		}
 	  }
 	}
   }
