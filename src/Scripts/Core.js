@@ -11,7 +11,7 @@ var fileManager = require('./FileManager');
 var generator = require('./Generator');
 var pattern = require('./Pattern');
 
-pattern.listPatterns();
+	 console.log(pattern.listPatterns());
  }
 
 

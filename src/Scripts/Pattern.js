@@ -6,10 +6,13 @@ module.exports.listPatterns = function() {
 	var fs = require('fs');
 	var patternsDir = process.cwd() + "/Patterns";
 
-	fs.readdir(patternsDir, {options: '..', encoding: 'utf8'}, function (err, files) {
+	var data = fs.readdirSync(patternsDir, {options: '..', encoding: 'utf8'});
 
-	});
+	return data;
 }
+
+
+
 
 
 module.exports.loadPattern = function(fileJSON){
