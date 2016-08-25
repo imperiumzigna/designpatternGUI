@@ -1,13 +1,16 @@
 /**
  * Created by igora on 24/08/2016.
  */
-module.exports.listPatterns = function(){
-var path = require('path');
+module.exports.listPatterns = function() {
 
-	console.log(path.dirname());
+	var fs = require('fs');
+	var patternsDir = process.cwd() + "/Patterns";
 
+	fs.readdir(patternsDir, {options: '..', encoding: 'utf8'}, function (err, files) {
 
+	});
 }
+
 
 module.exports.loadPattern = function(fileJSON){
 
