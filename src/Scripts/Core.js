@@ -6,8 +6,8 @@
  */
 
 class Core {
-	constructor(nothing){
 
-	}
+   constructor(){
 
+   }
 }
