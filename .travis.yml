@@ -18,6 +18,4 @@ install:
   - npm i -g npm
   - npm install
 
-script:
-  - npm run compile
-  - npm run test
+
