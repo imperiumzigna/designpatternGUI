@@ -2,35 +2,20 @@
  * Created by igora on 24/08/2016.
  */
 module.exports.listPatterns = function() {
-	var p = require('path');
+	var path = require('path');
 	var fs = require('fs');
 	var patternsDir = process.cwd() + "/Patterns";
-	var i = 0;
-	var walk = require('walkdir');
-	var dirNames = fs.readdirSync(patternsDir, {options: '..', encoding: 'utf8'});
+	var data;
+	var DirTree = require('dir_tree');
+	var jsonfile = require('jsonfile');
+	var dir_tree_obj = new DirTree(patternsDir);
 
-	var raw_data = walk.sync(patternsDir,{"return_object":true},function(path,stat){
-		// ignore all .git directories.
-		if(p.basename(path) === '.git') {
-			this.ignore(path);
-		}
-
+	 dir_tree_obj.on('data', function(dados){
+	 	var json = dados.serial();
+		jsonfile.writeFile(patternsDir + '/Files.json',json,function(err){});
 	});
 
-
-	var data = {};
-
-	
-
-	while(i<dirNames.length){
-		if(dirNames[i]==='.git'){
-			dirNames[i] = dirNames[i+1];
-
-		}
-
-		data = {DirName:dirNames[i],Files: []}
-		i++;
-	}
+	var data = require( patternsDir + '/Files.json')
 return data;
 }
 
