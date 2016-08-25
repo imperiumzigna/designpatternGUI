@@ -17,5 +17,6 @@ cache:
 install:
   - npm i -g npm
   - npm install
-
+notifications:
+  email: false
 
