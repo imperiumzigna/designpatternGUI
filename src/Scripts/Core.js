@@ -4,15 +4,17 @@
   *
   * Class Core - Principal Class of the system. Handles program initialization and other class requisites.
  */
+ module.exports.initialize = function(){
 
- require('path');
-
-class Core {
-
-	initialize(path){
-		path.dirname();
-	}
+var parser = require('./Parser');
 
 
+	 parser._Parser();
+ }
 
-}
+
+
+
+
+
+

@@ -15,6 +15,9 @@ function onClosed() {
 }
 
 function createMainWindow() {
+	var core =require('./Scripts/Core');
+
+	core.initialize();
 	const win = new electron.BrowserWindow({
 		width: 900,
 		height: 800

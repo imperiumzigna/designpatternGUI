@@ -1,21 +1,27 @@
 /**
  * Created by igora on 24/08/2016.
  */
-class Pattern extends Core {
+var Pattern = (function (exports, require, module, __filename, __dirname) {
+// Your module code actually lives in here
 
-	listPatterns(){
-
-	}
-
-	loadPattern(fileJSON){
-
-	}
-	checkPattern(fileJSON){
-
-	}
-	editPattern(fileJSON,Keys){
+	var listPatterns = function(){
 
 	}
 
+	var loadPattern = function(fileJSON){
 
-}
+	}
+	var	checkPattern = function(fileJSON){
+
+	}
+	var editPattern = function(fileJSON,Keys){
+
+	}
+
+
+});
+
+module.exports = Pattern;
+
+
+
