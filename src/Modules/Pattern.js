@@ -1,6 +1,11 @@
 /**
- * Created by igora on 24/08/2016.
+ * Created by Igor Amorim Silva on 24/08/2016.
  */
+
+/** Module listPatterns - Load all folders and subfolders on /Patterns directory.
+ *  @param void
+ *  @return JSON
+ * */
 module.exports.listPatterns = function() {
 	var path = require('path');
 	var fs = require('fs');

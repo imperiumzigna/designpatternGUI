@@ -8,7 +8,7 @@
  * @type {Parser}
  */
 var Parser = new function (patternJSON) {
-   this._pattern = JSON.parse(patternJSON);
+   this._Pattern = JSON.parse(patternJSON);
 };
 
 /**

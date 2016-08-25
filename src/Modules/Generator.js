@@ -1,5 +1,5 @@
 /**
- * Created by igora on 24/08/2016.
+ * Created by Igor Amorim Silva on 24/08/2016.
  */
 module.exports.generatePattern = function(optionsJSON){
 
