@@ -7,9 +7,11 @@
  module.exports.initialize = function(){
 
 var parser = require('./Parser');
+var fileManager = require('./FileManager');
+var generator = require('./Generator');
+var pattern = require('./Pattern');
 
 
-	 parser._Parser();
  }
 
 
