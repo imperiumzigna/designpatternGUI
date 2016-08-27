@@ -1,18 +1,47 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Electron boilerplate</title>
-		<link rel="stylesheet" href="Css/index.css">
-		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-		<script src="bower_components/jquery/dist/jquery.js"></script>
-		<script src="bower_components/angular/angular.js"></script>
-	</head>
-	<body ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title>Design Patterns Generator</title>
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+</head>
+<body ng-app="main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <!--- START ANGULAR FOREACH FOR LANGUAGE-->
+                <div class = "panel panel-success">
+                    <div class = "panel-heading">
+                        <h4 class = "panel-title list-group">
+                            <a data-toggle="collapse" data-parent = "#accordion" href="#collapseOne">Java</a>
+                        </h4>
+                    </div>
 
+                    <div id = "collapseOne" class = "panel-collapse collapse in">
+                        <div class = "panel-body">
+                            <!--- START ANGULAR FOREACH FOR PATTERN-->
+                            <li> Factory </li>
+                            <li> Singleton </li>
+                            <li> Facade </li>
+                            <!--- END FOR EACH-->
+                        </div>
+                    </div>
 
-	<!-- Modules -->
+                </div>
+                <!--- END FOR EACH-->
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" ng-controller="sidebar">
+        <p> {{ name }}</p>
+    </div>
+    <!-- Modules -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="angular/main.js"></script>
+</body>
 
-	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-	</body>
 </html>
